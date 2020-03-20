@@ -1,0 +1,21 @@
+
+#wrapper{
+
+    max-width: 1280px;
+    margin: auto;
+    
+}
+
+nav{
+    display: flex;
+}
+
+.center{ 
+    align-items: center;
+}
+main{
+    display: flex;
+}
+footer{
+    display: flex;
+}
