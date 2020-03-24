@@ -1,6 +1,19 @@
 
+
+
+*{
+	box-sizing: border-box;
+}
+
 body{
-    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: 'roboto', sans-serif ;
+    font-size: 16px;
+}
+a{
+	text-decoration: none;
+	color: inherit;
 }
 #wrapper{
 
@@ -8,27 +21,156 @@ body{
     margin: auto;
     
 }
-
-nav{
+header{
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
-
-.center { 
-    display : block;
+nav{
+    
+    flex: 1;
+    margin-bottom: 2%;
     text-align: center;
 }
+header nav a{
+	margin: 0 5%;
+	font-weight: bold;
+}
+
+header nav a:hover{
+
+	margin: 0 5%;
+	padding-bottom: 3%;
+    color: #6aa821;
+}
+#banner{
+    height: 15em;
+	position: relative;
+	margin: 0;
+}
+#banner img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+figcaption{
+    display: flex;
+	width: 100%;
+	background-color: rgba(0,75,0,0.5);
+	color: #fff;
+	margin: 0;
+	padding: 1%;
+	position: absolute;
+	bottom: 0;
+	justify-content: space-between;
+	align-items: center;
+}
+#btlien{
+	background-color:#6aa821;
+	padding: 0.5em;
+	border-radius: 0.5em;
+}
+
 main{
     display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px #6aa821 solid ;
 } 
+#firsta{
+    flex: 2;
+	padding-bottom: 1em;
+}
+
+#logot{
+    
+    padding-left: 1.5em;
+	background: transparent url('./img/nvidia-eye.png') no-repeat top left;
+	background-size: 1em 1em;
+
+}
+
+#lg{
+    height: 100px
+}
 
 #propos{
-    max-width: 25%;
-    align-items: flex-end;
-    background-color: green;
+    width: 30%;
+    padding-left: 1em;
+    padding-right: 1em;
+	background-color: #6aa821;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
 }
-.fa{
-    color: white;
+#proposbody{
+    flex: 1;
 }
+#propos h2, #flag{
+	text-align: center;
+}
+#flag img{
+    width:130px;
+	height: 100px;
+}
+#sociaux{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#tribtn{
+	text-align: center;
+}
+#tribtn img{
+    width: 2em;
+	height: 2em;
+	margin-top: -6px;
+}
+
+
 footer{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.check{
+    flex-direction: column;
+    justify-content: flex-end ;
+    display: flex;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    
+}
+.check input{
+    
+	padding: 0.5em 1em;
+	background-color: #6aa821;
+	color: #fff;
+	border: none;
+}
+.check input:hover{
+	background-color: #2a8811;
+}
+#formfl{
+    display: flex;
+}
+#formcol{
+    display: flex;
+	flex-direction: column;
+}
+#formcol input{
+    padding: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+
+#gallery, #part {
+    display: flex;
+    
+}
+#gallery a, #part a {
+    width: 100px;
+	height: 100px;
+	margin-right: 0.5em;
 }
